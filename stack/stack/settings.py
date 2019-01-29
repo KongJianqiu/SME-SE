@@ -1,13 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Scrapy settings for stack project
-#
-# For simplicity, this file contains only settings considered important or
-# commonly used. You can find more settings consulting the documentation:
-#
-#     http://doc.scrapy.org/en/latest/topics/settings.html
-#     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
+
 
 DOWNLOAD_DELAY = 5
 
@@ -20,8 +14,8 @@ ITEM_PIPELINES = ['stack.pipelines.MongoDBPipeline', ]
 
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
-MONGODB_DB = "stackoverflow"
-MONGODB_COLLECTION = "questions"
+MONGODB_DB = "experts"
+MONGODB_COLLECTION = "experts_files"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
